@@ -1,0 +1,51 @@
+ls: lister
+ls -l: lister tout les fichiers avec des infos supplémentaires
+man -ls: afficher le manuel des ls
+wkdir repository:
+less + nom de fichier: afficher un fichier text, le lire (lecteur de texte)
+echo: envoyer une chaine de caratère
+ps: process
+ps aux: une vue plus clair de ses processus
+top: voit les plus actif des processus
+ps aux | grep httpd: filtre
+find . -name "*log*": chercher un fichier qui se termine ou débute (place de l'étoile) par log
+grep "wordpress": cherche des chaines de caractere wordpress dans un fichier
+grep "abc"*: cherche le terme abc dans tout les fichiers
+grep -r "abc"*: cherche de maniere récursive le terme abc
+man find 
+chmod: rendre exécutable
+chown: changer d'utilisateur
+chown balt groupe1 f.txt: changer l'utilisateur du fichier f.txt
+4:lecture
+2:ecriture
+1:exécuter
+3 chiffres qui correspond a l'utilisateur, le groupe et les autres
+Permission de fichier de 1 a 7 (6=4+1 lecture et exécution)
+Plus le chiffre est grand, moins c'est grave dans les permision (permission suceptible d'accorder aux autres utilisateur
+chmod +x: rajout de la permission d'exécution
+chmod -x: enlève la permission d'exécution
+d : tache qui va toujours fonctionner en mode serveur (cmd qui se termine par d) démon
+spamd : démon qui tourne tout le temps en page de fond et des qu'un utlisateur recois un email, spam: service client qui déterminesi c'est un spam ou pas
+echo $EDITOR: variable d'environnement
+echo $PATH: tout les chemins exécutable de la machine
+.pl:
+.py:
+.sh: document en shell
+
+echo "bla">README.txt : envoie bla dans le fichier README.txt
+git add *: ajouter tout 
+#!/bin/bash: titre indicatif, va essayer de l'ouvrir avec bash
+run -fr text.git: 
+-fr: ne demande pas une assurance de supprimer
+-rm: remove
+-r: réccursif (cherche dans tout les fichier et meme sous fichiers)
+
+q : Quitter le terminal apres avoir fait un less
+C-d : Quitter 
+M-f : Aller au mot suivant
+C-l : Supprimer ce qu'il y a dans le terminal
+c-s-v : 
+C-a/e: aller au début ou fin de terminal
+//type : équivaut a C-f (n: next type / N: previous type
+
+zip -r nom.zip  dossier/* : ziper un dossier
